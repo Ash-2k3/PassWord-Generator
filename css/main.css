@@ -3,6 +3,7 @@
          padding: 0;
          margin: 0;
 }
+
 body{
          min-height: 100vh;
          background: black;
@@ -11,7 +12,7 @@ body{
          color: whitesmoke;
 }
 .container{
-         min-height: inherit;
+         min-height: 100vh;
          display: flex;
 }
 
@@ -44,9 +45,11 @@ div.main{
 .password-properties{
         background: rgb(32, 32, 32);
         padding: 1.5em;
+        /* position: relative; */
 }
 
 section.length{
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -94,6 +97,71 @@ input[type=range]::-webkit-slider-thumb{
         background: black;
 
 }
+
+/*checkBox*/
+.cb{
+        
+        margin: 1em;
+}
+label{
+        position:absolute;
+        margin-left: 1.5em;
+        font-size: 1.2rem;
+}
+input[type=checkbox]{
+        height: 20px;
+        width:20px ;
+}
+
+fieldset{
+        border: none;
+}
+
+/* Strength Section */
+
+section.strength{
+        background: rgb(17, 17, 17);
+        padding: 1em 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+section.strength span{
+         text-transform: uppercase;
+         color: rgb(112,112,112);
+}
+
+section.strength .password-strength{
+        font-size: 1.5rem;
+        text-transform:uppercase ;
+}
+
+/*Generate Button*/
+
+button.generate{
+        font-family:  'Source Code Pro', monospace;
+        text-transform: uppercase;
+        margin-top: 3em;
+        width: 100%;
+        padding: 1em;
+        font-weight: bold;
+        font-size: 1.6rem;
+        background: #c9f39a;
+        color: rgb(32, 32, 32);
+       
+       
+        border: 1px solid #c9f39a;
+}
+
+button.generate:hover{
+        cursor: pointer;
+        background: rgb(32, 32, 32);
+        color: #c9f39a;
+        border: 1px solid #c9f39a;
+}
+
+
 
 
 
