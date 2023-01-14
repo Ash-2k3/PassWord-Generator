@@ -2,8 +2,6 @@
 *{
          padding: 0;
          margin: 0;
-
-
 }
 body{
          min-height: 100vh;
@@ -15,11 +13,37 @@ body{
 .container{
          min-height: inherit;
          display: flex;
+}
 
+h2{
+        color: rgb(112, 112, 112);
+        padding: 0.8em;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: normal;
+       
 }
 
 div.main{
         width: 50%;
          margin: auto;
+         background: rgb(0, 0, 0);
 
+         
 }
+
+.password-container{
+        margin-bottom: 1.2em;
+        background: rgb(32, 32, 32);
+        padding: 1em;
+        font-size: 1.2rem;
+}
+
+
+
+.password-properties{
+        background: rgb(32, 32, 32);
+}
+
+
+
