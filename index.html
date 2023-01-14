@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
          <meta charset="UTF-8">
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +13,68 @@
 
 
 <body>
-         
+         <div class="container">
+                  <div class="main">
+                           <div class="password-container">
+                                    <section class="txt">
+                                             Password Generator
+                                    </section>
+                                    <section class="generated-password">
+                                             Password
+                                    </section>
+                           </div>
 
 
+                           <div class="password-properties">
+                                    <section class="length">
+                                             <span>Character Length</span>
+                                             <div class="num-length">
+                                                      25
+                                             </div>
+                                    </section>
+                                    <section class="slider">
+                                             <input type="range" id="pass-length" name="pass-length" min="0" max="50"
+                                                      value="25">
+                                    </section>
+                                    <section class="checkboxes">
+                                             <fieldset>
+                                                      <input type="checkbox" id="uppercase" value="uppercase">
+                                                      <label for="uppercase">Include Uppercase Letters</label>
+
+                                                      <input type="checkbox" name="lowercase" id="lowercase">
+                                                      <label for="lowercase">Include Lowercase Letters</label>
+
+                                                      <input type="checkbox" name="numbers" id="numbers">
+                                                      <label for="lowercase">Include Numbers</label>
+
+                                                      <input type="checkbox" name="symbols" id="symbols">
+                                                      <label for="symbols">Include Symbols</label>
+
+
+                                             </fieldset>
+
+                                    </section>
+                                    <section class="strength">
+                                             <span>Strength</span>
+                                             <div class="password-strength">
+                                                      Medium
+                                             </div>
+                                    </section>
+
+                                    <section class="generate">
+                                             <button class="generate">
+                                                      generate
+                                             </button>
+                                    </section>
+
+
+                           </div>
+                  </div>
+
+
+         </div>
 
          <script src="/js/index.js"></script>
 </body>
+
 </html>
