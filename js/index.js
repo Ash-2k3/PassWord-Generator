@@ -79,7 +79,7 @@ function checkedParameters() {
                   makePassOutOf.push("Symbol");
          }
          if (isUppercaseChecked() === true) {
-                  makePassOutOf.push("Uppercase");
+                  makePassOutOf.push("UpperCase");
          }
          if (isLowercaseChecked() === true) {
                   makePassOutOf.push("LowerCase");
@@ -88,11 +88,45 @@ function checkedParameters() {
          return makePassOutOf;
 }
 
+function makePassword(makePassOutOf) {
+         var result ="";
+         if (makePassOutOf.length === 0) {
+                  prompt("You need to have atleast one option selected")
+         } else {
+                  let count = 0;
+                  console.log(passLength.innerText)
+                  while (count < passLength.innerText) {
+                           let optionIndex = Math.floor(Math.random() * makePassOutOf.length);
+                           const option = makePassOutOf[optionIndex];
+                           switch (option) {
+                                    case "Number":
+                                             result += randomNumber();
+                                             break;
+                                    case "Symbol":
+                                             result += randomSymbol();
+                                             break;
+                                    case "LowerCase":
+                                             result += randomLowercase();
+                                             break;
+                                    case "UpperCase":
+                                             result += randomUppercase();
+                                    default:
+                                             break;
+                           }
+                           count++;
+                  }
+                  return result
+         }
+}
+
 
 /* Handling what to do after generate button is clicked */
 generateBtn.addEventListener("click", () => {
          const makePassOutOf = checkedParameters();
-         console.log(makePassOutOf);
-         
+         // console.log(makePassOutOf);
+         const resultPass = makePassword(makePassOutOf);
+         // console.log(resultPass);
+         passwordGenerated.innerText = resultPass ;
+
 })
 
