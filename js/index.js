@@ -9,19 +9,19 @@ var passLength = document.querySelector(".num-length");
 
 /* Password length slider */
 var lengthSlider = document.querySelector("input[type=range");
-console.log(lengthSlider);
+// console.log(lengthSlider);
 
 /*CheckBoxes */
-var isUppercaseChecked = document.querySelector("input#uppercase");
+var cbUppercase = document.querySelector("input#uppercase");
 // console.log(isUppercaseChecked.checked = true);
 
-var isLowercaseChecked = document.querySelector("input#lowercase");
+var cbLowercase = document.querySelector("input#lowercase");
 // console.log(isLowercaseChecked.checked = false)
 
-var isNumberChecked = document.querySelector("input#numbers");
+var cbNumber = document.querySelector("input#numbers");
 // console.log(isNumberChecked.checked);
 
-var isSymbolsAllowed = document.querySelector("input#symbols");
+var cbSymbols = document.querySelector("input#symbols");
 // console.log(isSymbolsAllowed.checked=true);
 
 /* Password Strength */
@@ -56,7 +56,43 @@ var randomSymbol = () => {
          return symbols.charAt(Math.floor(Math.random() * symbols.length));
 }
 
+/* Check for what cb are checked */
+
+var isNumberChecked = () => (cbNumber.checked === true)
+
+var isSymbolsChecked = () => (cbSymbols.checked === true)
+
+var isLowercaseChecked = () => (cbLowercase.checked === true)
+
+var isUppercaseChecked = () => (cbUppercase.checked === true)
 
 
 
+/* Check for what are checked */
+function checkedParameters() {
+         const makePassOutOf = [];
+         // console.log(isLowercaseChecked());
+         if (isNumberChecked() === true) {
+                  makePassOutOf.push("Number");
+         }
+         if (isSymbolsChecked() === true) {
+                  makePassOutOf.push("Symbol");
+         }
+         if (isUppercaseChecked() === true) {
+                  makePassOutOf.push("Uppercase");
+         }
+         if (isLowercaseChecked() === true) {
+                  makePassOutOf.push("LowerCase");
+         }
+
+         return makePassOutOf;
+}
+
+
+/* Handling what to do after generate button is clicked */
+generateBtn.addEventListener("click", () => {
+         const makePassOutOf = checkedParameters();
+         console.log(makePassOutOf);
+         
+})
 
