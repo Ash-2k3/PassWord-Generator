@@ -1,15 +1,15 @@
 
-/* Generated password section */ 
+/* Generated password section */
 var passwordGenerated = document.querySelector("section.generated-password");
 // console.log(passwordGenerated.innerText);
 
-/* Character-length numeric */ 
+/* Character-length numeric */
 var passLength = document.querySelector(".num-length");
 // console.log(passLength.innerText);
 
 /* Password length slider */
 var lengthSlider = document.querySelector("input[type=range");
-// console.log(lengthSlider.value);
+console.log(lengthSlider);
 
 /*CheckBoxes */
 var isUppercaseChecked = document.querySelector("input#uppercase");
@@ -32,6 +32,29 @@ var passStrength = document.querySelector(".password-strength");
 const generateBtn = document.querySelector("button.generate");
 // console.log(generateBtn);
 
+
+lengthSlider.addEventListener("input", (evt) => {
+         passLength.innerText = evt.target.value;
+})
+
+
+
+/** Password Generating Function/Method  */
+
+var randomUppercase = () => {
+         return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
+}
+
+var randomLowercase = () => {
+         return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
+}
+
+var randomNumber = () => (Math.floor(Math.random() * 10));
+
+var randomSymbol = () => {
+         const symbols = "!@#$%^&*()";
+         return symbols.charAt(Math.floor(Math.random() * symbols.length));
+}
 
 
 
