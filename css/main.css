@@ -22,15 +22,12 @@ h2{
         text-align: center;
         font-size: 1.2rem;
         font-weight: normal;
-       
 }
 
 div.main{
         width: 50%;
          margin: auto;
          background: rgb(0, 0, 0);
-
-         
 }
 
 .password-container{
@@ -40,8 +37,6 @@ div.main{
         font-size: 1.2rem;
 }
 
-
-
 .password-properties{
         background: rgb(32, 32, 32);
         padding: 1.5em;
@@ -49,8 +44,7 @@ div.main{
 }
 
 section.length{
-
-        display: flex;
+  display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 1.2em;
@@ -86,8 +80,7 @@ input[type = range]::-webkit-slider-runnable-track{
 }
 
 input[type=range]::-webkit-slider-thumb{
-      
-        border: 1px solid #c9f39a;
+              border: 1px solid #c9f39a;
         border-radius: 23px;
         height: 23px;
         width: 23px;
@@ -95,12 +88,10 @@ input[type=range]::-webkit-slider-thumb{
         -webkit-appearance: none;
         margin-top: -7px;
         background: black;
-
 }
 
 /*checkBox*/
 .cb{
-        
         margin: 1em;
 }
 label{
@@ -118,7 +109,6 @@ fieldset{
 }
 
 /* Strength Section */
-
 section.strength{
         background: rgb(17, 17, 17);
         padding: 1em 2em;
@@ -138,7 +128,6 @@ section.strength .password-strength{
 }
 
 /*Generate Button*/
-
 button.generate{
         font-family:  'Source Code Pro', monospace;
         text-transform: uppercase;
@@ -149,8 +138,6 @@ button.generate{
         font-size: 1.6rem;
         background: #c9f39a;
         color: rgb(32, 32, 32);
-       
-       
         border: 1px solid #c9f39a;
 }
 
