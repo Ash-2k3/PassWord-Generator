@@ -1,31 +1,31 @@
 
 /* Generated password section */
-var passwordGenerated = document.querySelector("section.generated-password");
+const  passwordGenerated = document.querySelector("section.generated-password");
 // console.log(passwordGenerated.innerText);
 
 /* Character-length numeric */
-var passLength = document.querySelector(".num-length");
+const  passLength = document.querySelector(".num-length");
 // console.log(passLength.innerText);
 
 /* Password length slider */
-var lengthSlider = document.querySelector("input[type=range");
+const lengthSlider = document.querySelector("input[type=range");
 // console.log(lengthSlider);
 
 /*CheckBoxes */
-var cbUppercase = document.querySelector("input#uppercase");
+const cbUppercase = document.querySelector("input#uppercase");
 // console.log(isUppercaseChecked.checked = true);
 
-var cbLowercase = document.querySelector("input#lowercase");
+const cbLowercase = document.querySelector("input#lowercase");
 // console.log(isLowercaseChecked.checked = false)
 
-var cbNumber = document.querySelector("input#numbers");
+const cbNumber = document.querySelector("input#numbers");
 // console.log(isNumberChecked.checked);
 
-var cbSymbols = document.querySelector("input#symbols");
+const cbSymbols = document.querySelector("input#symbols");
 // console.log(isSymbolsAllowed.checked=true);
 
 /* Password Strength */
-var passStrength = document.querySelector(".password-strength");
+const passStrength = document.querySelector(".password-strength");
 // console.log(passStrength);
 
 /* Generate Button */
